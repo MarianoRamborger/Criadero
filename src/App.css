@@ -9,7 +9,7 @@
 .header-div {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  justify-content: center;
   align-content: center;
 
 
@@ -48,7 +48,7 @@
 
 .nav-list {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   list-style: none;
   justify-content: center;
   align-items: center;
