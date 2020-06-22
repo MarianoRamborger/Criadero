@@ -3,7 +3,7 @@ import './App.css'
 
 // import LeftBody from './Components/LeftBody/Leftbody'
 import PicturesBody from './Components/LeftBody/PicturesBody'
-import NewsBody from './Components/LeftBody/NewsBody'
+import NewsBody from './Components/LeftBody/newsBody'
 import RightColumn from './Components/RightColumn/RightColumn'
 import Header from './Components/Header/Header'
 import Title from './Components/Accordion/Title'
