@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css'
 
 import LeftBody from './Components/LeftBody/Leftbody'
+import PicturesBody from './Components/LeftBody/PicturesBody'
+import NewsBody from './Components/LeftBody/NewsBody'
 import RightColumn from './Components/RightColumn/RightColumn'
 import Header from './Components/Header/Header'
 import Title from './Components/Accordion/Title'
@@ -39,12 +41,26 @@ return (
               <Header/>
 
               <div id="row-of-columns">
-              <LeftBody />
+              <NewsBody />
 
               <RightColumn />
               </div>
-
           </Route>
+
+          <Route exact path="/fotos">
+
+            <Header/>
+
+            <div id="row-of-columns">
+            <PicturesBody />
+
+            <RightColumn />
+            </div>
+          </Route>
+
+
+
+
 
 
 

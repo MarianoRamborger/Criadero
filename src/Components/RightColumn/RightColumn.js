@@ -1,5 +1,6 @@
 import React from 'react'
 import Certificado from '../../Images/Cert/cert.jpeg'
+import {SpringModal} from '../Modal/Modal'
 
 
 const RightColumn = () => {
@@ -7,7 +8,8 @@ const RightColumn = () => {
     return ( 
     <div className="right-column ">
 
-        <img className="cert-pic" src={Certificado} alt="Certificado" />
+        <SpringModal image={Certificado} alt={"Certificado"} className={"cert-pic contrast"}  />
+       
 
         <h3> Que dicen de nosotros</h3>
             <p> Acá irian los reviews</p>
