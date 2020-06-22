@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css'
 
-import LeftBody from './Components/LeftBody/Leftbody'
+// import LeftBody from './Components/LeftBody/Leftbody'
 import PicturesBody from './Components/LeftBody/PicturesBody'
 import NewsBody from './Components/LeftBody/NewsBody'
 import RightColumn from './Components/RightColumn/RightColumn'
