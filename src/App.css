@@ -31,6 +31,8 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-content: center;
+
   
 }
 
@@ -52,19 +54,24 @@
   list-style: none;
   justify-content: center;
   align-items: center;
-  margin: 0px;
+  margin: 5px 0px;
   padding: 0px;
-  height: 2em;
+  height: 100%;
 }
 
 
 
 .nav-list a {
   color : snow;
-  padding: 5px 35px;
+  padding: 5px 0px;
+  margin-right: 20px;
   font-size: 1.2em;
   text-decoration: none;
   
+}
+
+.nav-list a:hover {
+  color: orangered
 }
 
 #row-of-columns {

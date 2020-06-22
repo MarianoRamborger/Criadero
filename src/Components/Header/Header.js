@@ -8,7 +8,7 @@ const Header = () => {
     
            
             <div className="title-div">
-            <h1>      Maltés "Copos de Nieve" - Criadero  </h1>   
+            <h1>      Criadero "Copos de Nieve"  </h1>   
             </div>
             <Navbar />
           
