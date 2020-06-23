@@ -2,12 +2,16 @@ import React from 'react';
 import './App.css'
 
 // import LeftBody from './Components/LeftBody/Leftbody'
-import PicturesBody from './Components/LeftBody/PicturesBody'
-import NewsBody from './Components/LeftBody/newsBody'
-import RightColumn from './Components/RightColumn/RightColumn'
 import Header from './Components/Header/Header'
 import Title from './Components/Accordion/Title'
 import Accordion from './Components/Accordion/Accordion'
+import PicturesBody from './Components/LeftBody/PicturesBody'
+import NewsBody from './Components/LeftBody/newsBody'
+import NosotrosBody from './Components/LeftBody/NosotrosBody'
+import ContactoBody from './Components/LeftBody/ContactoBody'
+import RightColumn from './Components/RightColumn/RightColumn'
+
+
 
 
 import {
@@ -31,33 +35,56 @@ return (
 
 
           <Route exact path="/">
-            <Title />
-           <Accordion />
+              <Title />
+            <Accordion />
           </Route>
 
          
           <Route exact path="/novedades">
 
+                <Header/>
+
+                <div id="row-of-columns">
+                <NewsBody />
+
+                <RightColumn />
+                </div>
+          </Route>
+
+          <Route exact path="/fotos">
+
               <Header/>
 
               <div id="row-of-columns">
-              <NewsBody />
+              <PicturesBody />
 
               <RightColumn />
               </div>
           </Route>
 
-          <Route exact path="/fotos">
+          <Route exact path="/nosotros">
+           <Header/>
 
-            <Header/>
+              <div id="row-of-columns">
+              <NosotrosBody />
 
-            <div id="row-of-columns">
-            <PicturesBody />
+              <RightColumn />
+              </div>
 
-            <RightColumn />
-            </div>
           </Route>
 
+          <Route exact path="/contacto">
+           <Header/>
+
+              <div id="row-of-columns">
+              <ContactoBody />
+
+              <RightColumn />
+              </div>
+
+          </Route>
+
+          
 
 
 

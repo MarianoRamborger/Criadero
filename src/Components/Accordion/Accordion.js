@@ -30,7 +30,7 @@ const Accordion = () => {
                 >
                 <p></p>
                 <p>
-                    <Link to="/novedades"> Nosotros </Link>
+                    <Link to="/nosotros"> Nosotros </Link>
                 </p>
                 <p></p>
         </Panel>
@@ -50,7 +50,7 @@ const Accordion = () => {
                 >
                 <p></p>
                 <p>
-                <Link to="/novedades"> Contacto </Link>
+                <Link to="/contacto"> Contacto </Link>
                 </p>
                 <p></p>
         </Panel>

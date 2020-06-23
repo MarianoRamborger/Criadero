@@ -10,9 +10,9 @@ return (
         <ul className="nav-list">
         <li> <Link to="/novedades"> Novedades </Link>  </li>
         {/* <li> <Link to="/"> La Raza </Link>  </li> */}
-        <li> <Link to="/"> Nosotros </Link> </li>
+        <li> <Link to="/nosotros"> Nosotros </Link> </li>
         <li> <Link to="/fotos"> Fotos! </Link> </li>
-        <li> <Link to="/"> Contácto </Link> </li>
+        <li> <Link to="/contacto"> Contacto </Link> </li>
       
    
             

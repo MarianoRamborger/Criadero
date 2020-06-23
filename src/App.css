@@ -230,6 +230,42 @@ align-content: flex-start;
 
 }
 
+
+.fb-icon, .fb-icon:visited, .fb-icon:active {
+  text-decoration: none;
+  color: yellowgreen;
+}
+
+.fb-icon svg  {
+  font-size: 2.5em;
+}
+
+.phone-number-h3 svg, .email svg {
+  font-size: 1.5em;
+  color: yellowgreen
+}
+
+.fb-links-div, .phone-div, .email-div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.fb-links, .phone-number, .email {
+  background-color: #968E59 ;
+  border-radius: 15px;
+  padding: 15px 40px
+  
+}
+
+.fb-icon:hover {
+  color: #3b5251
+}
+
+.font-color {
+  color: black
+}
+
 @media only screen and (max-width: 600px) { 
 
   .news-card-multi-image, .fotos-section-pic  {
@@ -237,6 +273,22 @@ align-content: flex-start;
     height: 150px;
     margin-bottom: 5px
   }
+}
 
+@media only screen and (max-width: 600px) { 
+
+  .news-card-multi-image, .fotos-section-pic  {
+    width: 100px;
+    height: 150px;
+    margin-bottom: 5px
+  }
+}
+
+@media only screen and (min-width: 600px) { 
+
+  .title-div, .nav-bar { 
+    padding-right: 8%;
+   
+  }
 
 }
