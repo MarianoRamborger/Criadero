@@ -15,9 +15,9 @@ const ContactoBody = () => {
 
         <div className="fb-links-div"> 
         <div className="fb-links">
-        <a href="https://www.facebook.com/Maltes-Copos-de-Nieve-Criadero-351312871715721/" className="fb-icon"> <FacebookIcon /> </a> 
-        <a href="https://www.facebook.com/maltescoposdenieve.criadero/" className="fb-icon">  <FacebookIcon /> </a> 
-        <a href="https://www.facebook.com/Copito-De-Seda-331569503965709/" className="fb-icon"> <FacebookIcon /> </a>   
+        <a href="https://www.facebook.com/Maltes-Copos-de-Nieve-Criadero-351312871715721/" className="fb-icon" target="blank"> <FacebookIcon /> </a> 
+        <a href="https://www.facebook.com/maltescoposdenieve.criadero/" className="fb-icon" target="blank">  <FacebookIcon /> </a> 
+        <a href="https://www.facebook.com/Copito-De-Seda-331569503965709/" className="fb-icon" target="blank"> <FacebookIcon /> </a>   
         </div>
         </div>
        
