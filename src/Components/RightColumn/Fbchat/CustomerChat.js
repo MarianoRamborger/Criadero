@@ -28,14 +28,14 @@ const CustomerChat = React.memo(function CustomerChat() {
         el.setAttribute('attribution', 'setup_tool');
         el.setAttribute('page_id', 110890407341913);
         el.setAttribute('ptheme_color', theme.palette.primary.main);
-        // el.setAttribute('plogged_in_greeting', '...');
-        // el.setAttribute('plogged_out_greeting', '...');
+        el.setAttribute('plogged_in_greeting', 'Holu');
+        el.setAttribute('plogged_out_greeting', 'Adiosin');
         // el.setAttribute('pgreeting_dialog_display', '...');
         // el.setAttribute('pgreeting_dialog_delay', '...');
         // el.setAttribute('pminimized', 'false');
         document.body.appendChild(el);
         FB.XFBML.parse();
-      }, 2000);
+      }, 500);
     }
   });
 
