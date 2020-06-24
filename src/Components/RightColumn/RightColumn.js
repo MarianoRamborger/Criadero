@@ -14,8 +14,7 @@ const RightColumn = () => {
         <h3> Que dicen de nosotros</h3>
             <p> Acá irian los reviews</p>
 
-        <h3> Charlemos! </h3>
-        <p> Acá iría el chat de facebook</p>
+     
 
         <CustomerChat />
    

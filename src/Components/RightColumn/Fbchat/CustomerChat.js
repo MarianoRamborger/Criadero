@@ -11,15 +11,15 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-// https://developers.facebook.com/docs/messenger-platform/discovery/customer-chat-plugin
+//When a component is wrapped in React.memo(), React renders the component and memoizes the result. Before the next render, if the new props are the same, React reuses the memoized result skipping the next rendering.
 const CustomerChat = React.memo(function CustomerChat() {
   const timeoutRef = React.useRef();
-//   const config = useConfig();
+
   const theme = useTheme();
   useStyles();
 
-  // Initialize Facebook widget(s) in 2 seconds after
-  // the component is mounted.
+
+ //facebook widget
   useFacebook({ xfbml: false }, FB => {
     if (timeoutRef.current !== null) {
       timeoutRef.current = setTimeout(() => {
@@ -30,12 +30,12 @@ const CustomerChat = React.memo(function CustomerChat() {
         el.setAttribute('ptheme_color', theme.palette.primary.main);
         el.setAttribute('plogged_in_greeting', 'Hola, que tal? En que podemos ayudarte?');
         el.setAttribute('plogged_out_greeting', 'Hola, que tal? En que podemos ayudarte?');
-        // el.setAttribute('pgreeting_dialog_display', 'show');
+        // el.setAttribute('pgreeting_dialog_display', '...');
         // el.setAttribute('pgreeting_dialog_delay', '...');
         // el.setAttribute('pminimized', 'false');
         document.body.appendChild(el);
         FB.XFBML.parse();
-      }, 500);
+      }, 200);
     }
   });
 

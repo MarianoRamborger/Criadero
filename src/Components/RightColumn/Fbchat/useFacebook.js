@@ -29,6 +29,8 @@ export function useFacebook(options, cb) {
         const script = document.createElement('script');
         const isDebug = window.localStorage.getItem('fb:debug') === 'true';
         script.src = `https://connect.facebook.net/en_US/sdk/xfbml.customerchat${isDebug ? '/debug' : ''}.js`;
+        //Ahí levanta el source, como dice en https://developers.facebook.com/docs/messenger-platform/discovery/customer-chat-plugin/sdk#install
+
         document.head.appendChild(script);
       });
       promise.then(cb);
