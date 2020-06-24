@@ -15,7 +15,7 @@ export function useFacebook(options, cb) {
         // https://developers.facebook.com/docs/javascript/reference/FB.init
         window.fbAsyncInit = () => {
           window.FB.init({
-            appId: 110890407341913,
+            appId: 896456977490629,
             autoLogAppEvents: true,
             status: true,
             cookie: true,
