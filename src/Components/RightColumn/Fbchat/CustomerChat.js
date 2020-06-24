@@ -30,7 +30,7 @@ const CustomerChat = React.memo(function CustomerChat() {
         el.setAttribute('ptheme_color', theme.palette.primary.main);
         el.setAttribute('plogged_in_greeting', 'Hola, que tal? En que podemos ayudarte?');
         el.setAttribute('plogged_out_greeting', 'Hola, que tal? En que podemos ayudarte?');
-        el.setAttribute('pgreeting_dialog_display', 'show');
+        // el.setAttribute('pgreeting_dialog_display', 'show');
         // el.setAttribute('pgreeting_dialog_delay', '...');
         // el.setAttribute('pminimized', 'false');
         document.body.appendChild(el);
