@@ -30,7 +30,6 @@ return (
   <Router>
 
 
-
     <Switch>
 
 
@@ -84,14 +83,7 @@ return (
 
           </Route>
 
-          
-
-
-
-
-
-
-         
+    
         
 
     </Switch>

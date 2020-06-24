@@ -3,8 +3,9 @@ import { FullpageAccordion, Panel } from "react-fullpage-accordion";
 import "react-fullpage-accordion/dist/react-fullpage-accordion.css";
 import "./Accordion.css";
 import Contacto from '../../Images/Sections/verdeContacto.jpg'
+import Nosotros from '../../Images/Sections/nosotros.jpg'
 import Fotos from '../../Images/Sections/Fotos.jpg'
-import Nosotros from '../../Images/Sections/verdeNosotros.jpg'
+// import Nosotros from '../../Images/Sections/verdeNosotros.jpg'
 import Novedades from '../../Images/Sections/Novedades.jpg'
 import {Link} from 'react-router-dom'
 
