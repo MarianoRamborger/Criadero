@@ -12,6 +12,7 @@ export function useFacebook(options, cb) {
       promise.then(cb);
     } else {
       promise = new Promise(resolve => {
+        // TEST ID 896456977490629
         // https://developers.facebook.com/docs/javascript/reference/FB.init
         window.fbAsyncInit = () => {
           window.FB.init({
