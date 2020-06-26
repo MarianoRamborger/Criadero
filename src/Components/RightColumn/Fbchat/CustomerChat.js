@@ -28,7 +28,7 @@ const CustomerChat = React.memo(function CustomerChat() {
         const el = document.createElement('div');
         el.className = 'fb-customerchat';
         el.setAttribute('attribution', 'setup_tool');
-        el.setAttribute('page_id', 351312871715721);
+        el.setAttribute('page_id', 110890407341913);
         el.setAttribute('ptheme_color', theme.palette.primary.main);
         el.setAttribute('plogged_in_greeting', 'Hola, que tal? En que podemos ayudarte?');
         el.setAttribute('plogged_out_greeting', 'Hola, que tal? En que podemos ayudarte?');
