@@ -33,7 +33,7 @@ const CustomerChat = React.memo(function CustomerChat() {
         // el.setAttribute('pgreeting_dialog_display', '...');
         // el.setAttribute('pgreeting_dialog_delay', '...');
         // el.setAttribute('pminimized', 'false');
-        //Change this later on
+        
         document.body.appendChild(el);
         FB.XFBML.parse();
       }, 200);
