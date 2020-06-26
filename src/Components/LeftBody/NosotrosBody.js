@@ -19,7 +19,7 @@ const NosotrosBody = () => {
 
         Resignamos cosas nuestras que se van destrozando con sus travesuras <br/>
 
-        Nos ganan la paciencia, la atención, los cuidados.
+        Nos ganan la paciencia, la atención, los cuidados. <br />
 
         Conocen nuestros gestos, nuestra voz, esperan por nuestros diarios regresos, esperan por caricias, por abrazos, y sus colas se agitan 
         como muestra de alegria. <br />
