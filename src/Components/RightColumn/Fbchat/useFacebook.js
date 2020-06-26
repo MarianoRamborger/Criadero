@@ -13,10 +13,11 @@ export function useFacebook(options, cb) {
     } else {
       promise = new Promise(resolve => {
         // TEST ID 896456977490629
+        // effective ID 742766353200270
         // https://developers.facebook.com/docs/javascript/reference/FB.init
         window.fbAsyncInit = () => {
           window.FB.init({
-            appId: 742766353200270,
+            appId: 896456977490629,
             autoLogAppEvents: true,
             status: true,
             cookie: true,
