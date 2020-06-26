@@ -25,7 +25,7 @@ export function useFacebook(options, cb) {
           });
           resolve(window.FB);
         };
-        
+
         const script = document.createElement('script');
         const isDebug = window.localStorage.getItem('fb:debug') === 'true';
         script.src = `https://connect.facebook.net/en_US/sdk/xfbml.customerchat${isDebug ? '/debug' : ''}.js`;

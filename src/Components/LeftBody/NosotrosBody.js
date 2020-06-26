@@ -11,13 +11,15 @@ const NosotrosBody = () => {
 
         <p className="nosotros-section-p"> 
 
+        
+
         Llegan a nuestro hogar como seres pequeños e indefensos, palpitando al miedo de estar solos. <br />
 
         Buscan un lugar donde comer y dormir. De a poco se van apropiando de la casa. <br />
 
         Resignamos cosas nuestras que se van destrozando con sus travesuras <br/>
 
-        Nos ganan la paciencia, la atención, los cuidados. <br />
+        Nos ganan la paciencia, la atención, los cuidados.
 
         Conocen nuestros gestos, nuestra voz, esperan por nuestros diarios regresos, esperan por caricias, por abrazos, y sus colas se agitan 
         como muestra de alegria. <br />
