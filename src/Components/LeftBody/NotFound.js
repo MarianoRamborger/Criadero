@@ -8,20 +8,21 @@ import notFoundPic from '../../Images/NotFound/notFoundPic.jpg'
 const NotFound = () => {
 
     return (
-        <div className="left-column">
 
-        <div className='four0four'>
+        <div className="left-column-container" >
+            <div className="left-column">
 
-        <h2 className="not-found"> 404 - No encontrado... </h2>
+                <div className='four0four'>
 
-        <SpringModal image={notFoundPic} alt={"foto"} className={"fotos-section-pic contrast not-found"} />
+                <h2 className="not-found"> 404 - No encontrado... </h2>
 
-        <Link to="/" className="escape">  Regresar al inicio </Link>
-        </div>
+                <SpringModal image={notFoundPic} alt={"foto"} className={"fotos-section-pic contrast not-found"} />
 
-       
+                <Link to="/" className="escape">  Regresar al inicio </Link>
+            </div>
 
 
+             </div>
         </div>
     )
 

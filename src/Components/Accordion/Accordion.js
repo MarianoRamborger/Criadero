@@ -9,12 +9,7 @@ import Fotos from '../../Images/Sections/Fotos.jpg'
 import Novedades from '../../Images/Sections/Novedades.jpg'
 import {Link} from 'react-router-dom'
 
-const accordionstyle = {
-    
-    backgroundImage: {Contacto},
-    
 
-  };
 
 
 
@@ -22,7 +17,7 @@ const Accordion = () => {
 
     return (
     
-        <div  style={accordionstyle}>
+   
         <FullpageAccordion >
 
         <Panel
@@ -67,7 +62,7 @@ const Accordion = () => {
         </Panel>
 
       </FullpageAccordion>
-      </div>
+
 
     )
 }

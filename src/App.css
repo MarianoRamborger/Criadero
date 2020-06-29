@@ -83,7 +83,7 @@
 .left-column { 
   display: flex;
   flex-flow: column wrap;
-  width: 85%;
+  width: 100%;
   text-align: center;
   background-color: rgba(196,189,139, 0.7);
   height: 100%;
@@ -314,7 +314,8 @@ br {
 
 
 
-body {
+.left-column-container {
+  width: 85%;
   background-image: url("./Components/Intro/gorriones.jpg");
   background-attachment: fixed;
   background-size: cover;

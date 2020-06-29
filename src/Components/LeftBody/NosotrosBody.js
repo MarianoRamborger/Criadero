@@ -5,6 +5,8 @@ import React from 'react'
 const NosotrosBody = () => {
 
     return (
+
+        <div className="left-column-container" >
         <div className="left-column">
 
         {/* <h2 className="nosotros-section-title"> Acá iría información sobre el criadero</h2> */}
@@ -42,6 +44,7 @@ const NosotrosBody = () => {
         </p>
 
 
+        </div>
         </div>
     )
 

@@ -10,6 +10,7 @@ import multidemo3 from '../../Images/DemoMultiImagen/multidemo3.jpg'
 const NewsBody  = () => {
 
     return (
+        <div className="left-column-container" >
         <div className="left-column news-column">
         
         <NewsCard 
@@ -43,6 +44,7 @@ const NewsBody  = () => {
  
       
     
+        </div>
         </div>
     )
 

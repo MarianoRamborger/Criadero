@@ -14,18 +14,20 @@ import { SpringModal } from '../Modal/Modal'
 const PicturesBody = () => {
 
     return (
-
-        <div className="left-column fotos-div">
-        
-        <SpringModal image={pic1} alt={"foto"} className={"fotos-section-pic contrast"} />
-        <SpringModal image={pic2} alt={"foto"} className={"fotos-section-pic contrast"} />
-        <SpringModal image={pic3} alt={"foto"} className={"fotos-section-pic contrast"} />
-        <SpringModal image={pic4} alt={"foto"} className={"fotos-section-pic contrast"} />
-        <SpringModal image={pic5} alt={"foto"} className={"fotos-section-pic contrast"} />
-        <SpringModal image={pic6} alt={"foto"} className={"fotos-section-pic contrast"} />
-        <SpringModal image={pic7} alt={"foto"} className={"fotos-section-pic contrast"} />
-        <SpringModal image={pic8} alt={"foto"} className={"fotos-section-pic contrast"} />      
-        <SpringModal image={pic9} alt={"foto"} className={"fotos-section-pic contrast"} />  
+        <div className="left-column-container" >
+            <div className="left-column fotos-div">
+            
+                <SpringModal image={pic1} alt={"foto"} className={"fotos-section-pic contrast"} />
+                <SpringModal image={pic2} alt={"foto"} className={"fotos-section-pic contrast"} />
+                <SpringModal image={pic3} alt={"foto"} className={"fotos-section-pic contrast"} />
+                <SpringModal image={pic4} alt={"foto"} className={"fotos-section-pic contrast"} />
+                <SpringModal image={pic5} alt={"foto"} className={"fotos-section-pic contrast"} />
+                <SpringModal image={pic6} alt={"foto"} className={"fotos-section-pic contrast"} />
+                <SpringModal image={pic7} alt={"foto"} className={"fotos-section-pic contrast"} />
+                <SpringModal image={pic8} alt={"foto"} className={"fotos-section-pic contrast"} />      
+                <SpringModal image={pic9} alt={"foto"} className={"fotos-section-pic contrast"} />  
+                
+            </div>
         </div>
 
     )
