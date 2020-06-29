@@ -13,7 +13,7 @@ import {Link} from 'react-router-dom'
 const Accordion = () => {
 
     return (
-        <React.Fragment className="accordion-fragment">
+    
         <FullpageAccordion>
 
         <Panel
@@ -58,7 +58,7 @@ const Accordion = () => {
         </Panel>
 
       </FullpageAccordion>
-      </React.Fragment>
+
     )
 }
 
