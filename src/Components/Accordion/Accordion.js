@@ -9,12 +9,20 @@ import Fotos from '../../Images/Sections/Fotos.jpg'
 import Novedades from '../../Images/Sections/Novedades.jpg'
 import {Link} from 'react-router-dom'
 
+const accordionstyle = {
+    
+    backgroundImage: 'none',
+
+  };
+
+
 
 const Accordion = () => {
 
     return (
     
-        <FullpageAccordion>
+        <div  style={accordionstyle}>
+        <FullpageAccordion >
 
         <Panel
                 itemId="0"
@@ -58,6 +66,7 @@ const Accordion = () => {
         </Panel>
 
       </FullpageAccordion>
+      </div>
 
     )
 }
