@@ -10,6 +10,7 @@ import NewsBody from './Components/LeftBody/newsBody'
 import NosotrosBody from './Components/LeftBody/NosotrosBody'
 import ContactoBody from './Components/LeftBody/ContactoBody'
 import RightColumn from './Components/RightColumn/RightColumn'
+import Gorriones from './Components/Intro/Intro'
 
 
 
@@ -33,12 +34,18 @@ return (
     <Switch>
 
 
-          <Route exact path="/">
+
+          <Route exact path="/home">
               <Title />
             <Accordion />
           </Route>
 
-         
+
+          <Route exact path="/">
+           <Gorriones />
+          </Route>
+
+
           <Route exact path="/novedades">
 
                 <Header/>

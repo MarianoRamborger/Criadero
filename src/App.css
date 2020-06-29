@@ -292,3 +292,30 @@ align-content: flex-start;
   }
 
 }
+
+
+@font-face {
+  font-family: ClickerScript;
+  src: local(Pacifico-Regular), url('./fonts/ClickerScript-Regular.ttf')
+
+}
+
+.nosotros-section-p {
+  padding: 0 10%;
+  text-align: center;
+  font-family: ClickerScript;
+  font-size: 2em;
+  color: #383b3e
+}
+
+br {
+  margin-bottom: 1%;
+}
+
+/* body {
+
+  background-image: url("./Components/Intro/gorriones.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 300px;
+} */

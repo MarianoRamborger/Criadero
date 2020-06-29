@@ -7,7 +7,7 @@ const NosotrosBody = () => {
     return (
         <div className="left-column">
 
-        <h2 className="nosotros-section-title"> Acá iría información sobre el criadero</h2>
+        {/* <h2 className="nosotros-section-title"> Acá iría información sobre el criadero</h2> */}
 
         <p className="nosotros-section-p"> 
 
