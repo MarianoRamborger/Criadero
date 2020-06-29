@@ -11,7 +11,8 @@ import {Link} from 'react-router-dom'
 
 const accordionstyle = {
     
-    backgroundImage: 'none',
+    backgroundImage: {Contacto},
+    
 
   };
 
