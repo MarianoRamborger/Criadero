@@ -33,7 +33,6 @@
     color: tomato !important;
   }
 
-  .body { 
-    background-image: none !important;
-    background-color: white;
+  .accordion-fragment {
+    background-image: none;
   }
