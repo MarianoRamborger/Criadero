@@ -319,3 +319,40 @@ br {
   background-size: cover;
   height: 300px;
 } */
+
+body {
+  background-image: url("./Components/Intro/gorriones.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+.not-found {
+  color: snow;
+  margin-bottom: 15px
+}
+
+.escape, .escape:visited {
+  text-decoration: none;
+  color: snow
+}
+
+.escape {
+  font-size: 2em;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 15px;
+  background-color: rgba(0,0,0, 0.5);
+  border-radius: 50px;
+  
+}
+
+.escape:hover {
+  color: orangered
+}
+
+.four0four h2 { 
+  font-size: 2em;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}

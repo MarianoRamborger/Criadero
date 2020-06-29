@@ -10,7 +10,8 @@ import NewsBody from './Components/LeftBody/newsBody'
 import NosotrosBody from './Components/LeftBody/NosotrosBody'
 import ContactoBody from './Components/LeftBody/ContactoBody'
 import RightColumn from './Components/RightColumn/RightColumn'
-import Gorriones from './Components/Intro/Intro'
+import NotFound from './Components/LeftBody/NotFound'
+// import Gorriones from './Components/Intro/Intro'
 
 
 
@@ -19,6 +20,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect,
   //Link
 } from "react-router-dom";
 
@@ -35,14 +37,14 @@ return (
 
 
 
-          <Route exact path="/home">
+          <Route exact path="/">
               <Title />
             <Accordion />
           </Route>
 
 
-          <Route exact path="/">
-           <Gorriones />
+          <Route exact path="/home">
+          <Redirect to='/' />
           </Route>
 
 
@@ -90,6 +92,18 @@ return (
 
           </Route>
 
+
+         <Route>
+
+               <Header/>
+
+              <div id="row-of-columns">
+              <NotFound />
+
+              <RightColumn />
+              </div>
+
+         </Route>
     
         
 
