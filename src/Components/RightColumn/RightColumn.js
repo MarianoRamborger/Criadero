@@ -31,7 +31,7 @@ const RightColumn = () => {
         {isMobile ?  
                 <div className="phone-div"> 
                 <div className="phone-number">
-                <a href="tel:444444444">+47 333 78 901  <PhoneInTalkIcon/>   </a>
+                <a href="tel:444444444"> <PhoneInTalkIcon/>   </a>
                 </div>
                 </div>
         :

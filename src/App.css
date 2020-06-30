@@ -255,6 +255,11 @@ align-content: flex-start;
   color: yellowgreen
 }
 
+.phone-number a, .phone-number a:visited, .phone-number:active {
+  text-decoration: none;
+  color: yellowgreen
+}
+
 .fb-links-div, .phone-div, .email-div {
   display: flex;
   flex-flow: row wrap;
