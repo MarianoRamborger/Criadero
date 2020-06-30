@@ -82,7 +82,7 @@ export  const SpringModal = (props) => {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-           <img src={props.image} alt={props.alt} className={props.fullScreenClassName}/>
+           <img src={props.image} alt={props.alt} className={props.fullScreenClassName} onClick={handleClose}/>
           </div>
         </Fade>
       </Modal>

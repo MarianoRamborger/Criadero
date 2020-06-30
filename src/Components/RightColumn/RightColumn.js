@@ -15,7 +15,7 @@ const RightColumn = () => {
 
         <div className="right-column-sticky">
 
-        <SpringModal image={Certificado} alt={"Certificado"} className={"cert-pic contrast"}  />
+        <SpringModal image={Certificado} alt={"Certificado"} className={"cert-pic contrast"} fullScreenClassName={'cert-big'}  />
        
 
     

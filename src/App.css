@@ -126,6 +126,10 @@
   margin-right: 10%;
 }
 
+.cert-big {
+  max-width: 100vh;
+}
+
 .right-column-text {
   display: flex;
   flex-flow: row wrap;
