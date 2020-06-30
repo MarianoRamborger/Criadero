@@ -25,7 +25,7 @@ const ContactoBody = () => {
                 <h2 className="font-color" > O llamarnos al...</h2>
                 <div className="phone-div"> 
                 <div className="phone-number">
-                <h3 className="phone-number-h3"> <PhoneInTalkIcon/>  XXXXXXXX </h3>
+                <p className="phone-number-p"> <PhoneInTalkIcon/>  XXXXXXXX </p>
                 </div>
                 </div>
             

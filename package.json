@@ -13,6 +13,7 @@
     "load-script": "^1.0.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
+    "react-device-detect": "^1.13.1",
     "react-dom": "^16.13.1",
     "react-fullpage-accordion": "^4.3.3",
     "react-router-dom": "^5.2.0",
