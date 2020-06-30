@@ -18,7 +18,8 @@ const NewsBody  = () => {
             text={"texto de relleno!"}
             image={pic1}
             imageAlt={"Perro celebrando"}
-            className={"contrast"}
+            className={"single-news-pic contrast"}
+
             
         />
  

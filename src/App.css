@@ -76,7 +76,7 @@
 }
 
 .nav-list a:hover {
-  color: orangered
+  color: #FFCC00
 }
 
 #row-of-columns {
@@ -218,7 +218,7 @@ background-color: rgba(177, 126, 81, 0.4);
 .fotos-div {
 display: flex;
 flex-flow: row wrap;
-justify-content: flex-start;
+justify-content: center;
 align-content: flex-start;
 }
 
@@ -349,6 +349,9 @@ align-content: flex-start;
     font-size: 2em;
   }
   
+  .news-card-image img { 
+    width: 75%;
+  }
 
 
   }
@@ -404,8 +407,14 @@ align-content: flex-start;
   text-align: center;
   font-family: ClickerScript;
   font-size: 2em;
-  color: #383b3e
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  
+  
 }
+
+
 
 br {
   margin-bottom: 1%;
