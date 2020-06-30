@@ -111,7 +111,7 @@
 }
 
 .right-column-sticky {
-  margin-top: 9%;
+  margin-top: 8.5%;
   position: sticky;
   top: 0;
   
@@ -254,12 +254,12 @@ align-content: flex-start;
 }
 
 .fb-icon svg  {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .phone-number svg, .email svg
  {
-  font-size: 2.5em;
+  font-size: 3em;
   color: yellowgreen
 
 }
@@ -277,7 +277,7 @@ align-content: flex-start;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-top: 5px;
+  margin-top: 30px;
   width: 100%;
 
 }
@@ -321,7 +321,7 @@ align-content: flex-start;
   font-size: 14px
 }
 
-@media only screen and (max-width: 1250px) {  
+@media only screen and (max-width: 1400px) {  
   .email-big {
     display: none;
   }}
