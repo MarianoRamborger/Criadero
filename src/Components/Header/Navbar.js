@@ -13,7 +13,7 @@ return (
         {/* <li> <Link to="/"> La Raza </Link>  </li> */}
         <li> <Link to="/nosotros"> Nosotros </Link> </li>
         <li> <Link to="/fotos"> Fotos! </Link> </li>
-        <li> <Link to="/contacto"> Contacto </Link> </li>
+        {/* <li> <Link to="/contacto"> Contacto </Link> </li> */}
       
    
             
