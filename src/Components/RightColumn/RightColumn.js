@@ -4,7 +4,7 @@ import {SpringModal} from '../Modal/Modal'
 import CustomerChat from './Fbchat/CustomerChat'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import PhoneInTalkIcon from '@material-ui/icons/PhoneInTalk';
-import MailIcon from '@material-ui/icons/Mail';
+// import MailIcon from '@material-ui/icons/Mail';
 import {isMobile} from "react-device-detect";
 
 const RightColumn = () => {
