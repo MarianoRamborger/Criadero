@@ -34,7 +34,7 @@ const RightColumn = () => {
         {isMobile ?  
                 <div className="phone-div"> 
                 <div className="phone-number">
-                <a href="tel:444444444"> <PhoneInTalkIcon/>   </a>
+                <a href="tel:47100945"> <PhoneInTalkIcon/>   </a>
                 </div>
                 </div>
             
@@ -42,7 +42,7 @@ const RightColumn = () => {
                 <div className="phone-div"> 
                         <div className="phone-number">
                         <TextModal className={"phone-modal"} text={"+XX XX XXXXXXXXXX"} icon={"phone"} />
-                        <p className="phone-number-p phone-big"> +XX XX XXXXXXXXXX </p>    
+                        <p className="phone-number-p phone-big"> 4710-0945</p>    
                         </div>
                         </div>
         }

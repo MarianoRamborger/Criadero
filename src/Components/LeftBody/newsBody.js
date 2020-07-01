@@ -5,6 +5,11 @@ import multidemo1 from '../../Images/DemoMultiImagen/multidemo1.jpg'
 import multidemo2 from '../../Images/DemoMultiImagen/multidemo2.jpg'
 import multidemo3 from '../../Images/DemoMultiImagen/multidemo3.jpg'
 
+import n1 from '../../Images/Nacimientos/1.JPG'
+import n2 from '../../Images/Nacimientos/2.JPG'
+import n3 from '../../Images/Nacimientos/3.JPG'
+import n4 from '../../Images/Nacimientos/4.JPG'
+import n5 from '../../Images/Nacimientos/5.JPG'
 
 
 const NewsBody  = () => {
@@ -14,9 +19,40 @@ const NewsBody  = () => {
         <div className="left-column news-column">
         
         <NewsCard 
+            title={"Estamos de nacimiento!"}
+            text={"Recién nacidos!"}
+            imageArray = {[
+                {
+                    image: n1,
+                    alt: "cachorro neonato",
+                    className : "news-card-multi-image-medium contrast"
+                
+                 },
+                 {
+                    image: n2, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast",  id:"14"
+                 }
+                 ,
+                 {
+                    image: n3, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast", id:"15"
+                 },
+                 {
+                    image: n4, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast", id:"16"
+                 },
+                 {
+                    image: n5, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast", id:"17"
+                 }
+            ]}
+    
+        />
+ 
+
+
+
+
+        <NewsCard 
             title={"Estrenamos página!"}
             id={"12"}
-            text={"texto de relleno!"}
+            text={"proximamente"}
             image={pic1}
             imageAlt={"Perro celebrando"}
             className={"single-news-pic contrast"}

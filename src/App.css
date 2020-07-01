@@ -187,7 +187,20 @@
 
 .news-card-text-div{
   width: 100%;
+
 }
+
+.news-card-title {
+  font-size: 30px
+}
+
+
+.news-card-text {
+  font-size: 20px;
+  margin-bottom: 30px
+}
+
+
 
 .news-card-multi-image {
 
@@ -195,9 +208,22 @@
   height: 300px;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+ 
+}
+
+.news-card-multi-image-medium {
+  width: 250px;
+  height: 350px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
 box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+
+
 }
+
 
 .multi-image-flex-column {
 display: flex;
@@ -205,6 +231,7 @@ flex-flow: row wrap;
 justify-content: space-evenly;
 align-content: center;
 width: 100;
+margin-bottom: 10px;
 }
 
 
