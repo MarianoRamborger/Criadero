@@ -18,7 +18,7 @@ const Accordion = (props) => {
     const {changeSectionState} = props
 
     const handleStateChange = (event) => {
-        console.log("FIRE")
+ 
         changeSectionState(event.target.id)
     }
 

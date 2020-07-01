@@ -9,7 +9,7 @@ const Navbar = (props) => {
 
 const handleStateChange = (event) => {
 
-   console.log(sectionState)
+
     changeSectionState(event.target.id)
    
             
