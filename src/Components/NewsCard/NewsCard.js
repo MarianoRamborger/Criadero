@@ -18,7 +18,8 @@ return (
         {   
             props.imageArray ?
             props.imageArray.map(pic => {
-            return <SpringModal image={pic.image} alt={props.alt} className={pic.className} id={props.alt} key={props.id || (Math.random() * 100 + Math.random() * 1000)}/> 
+                console.log(pic.fullScreenClassName)
+            return <SpringModal image={pic.image} alt={pic.alt} className={pic.className} id={pic.id} fullScreenClassName={pic.fullScreenClassName} key={pic.id || (Math.random() * 100 + Math.random() * 1000)}/> 
         })
             : null
         }
@@ -27,7 +28,7 @@ return (
 
     {props.image ? 
         <div className="news-card-image">
-        <SpringModal image={props.image} alt={props.alt} className={props.className} key={props.id || (Math.random() * 100 + Math.random() * 1000)} /> 
+        <SpringModal image={props.image} alt={props.alt} className={props.className} fullScreenClassName={props.fullScreenClassName}  key={props.id || (Math.random() * 100 + Math.random() * 1000)} /> 
         </div>
         :
         null

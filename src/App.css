@@ -214,8 +214,8 @@
 }
 
 .news-card-multi-image-medium {
-  width: 250px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
@@ -357,6 +357,11 @@ align-content: flex-start;
 .email-big {
   font-size: 14px
 }
+
+.full-screen-big {
+  width: 600px;
+}
+
 
 @media only screen and (max-width: 1400px) {  
   .email-big {

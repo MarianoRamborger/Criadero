@@ -25,21 +25,22 @@ const NewsBody  = () => {
                 {
                     image: n1,
                     alt: "cachorro neonato",
-                    className : "news-card-multi-image-medium contrast"
+                    className : "news-card-multi-image-medium contrast",
+                    fullScreenClassName: "full-screen-big"
                 
                  },
                  {
-                    image: n2, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast",  id:"14"
+                    image: n2, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast",  id:"14", fullScreenClassName: "full-screen-big"
                  }
                  ,
                  {
-                    image: n3, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast", id:"15"
+                    image: n3, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast", id:"15", fullScreenClassName: "full-screen-big"
                  },
                  {
-                    image: n4, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast", id:"16"
+                    image: n4, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast", id:"16", fullScreenClassName: "full-screen-big"
                  },
                  {
-                    image: n5, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast", id:"17"
+                    image: n5, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast", id:"17", fullScreenClassName: "full-screen-big"
                  }
             ]}
     
