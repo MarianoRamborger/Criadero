@@ -13,7 +13,14 @@ import {Link} from 'react-router-dom'
 
 
 
-const Accordion = () => {
+const Accordion = (props) => {
+
+    const {changeSectionState} = props
+
+    const handleStateChange = (event) => {
+        console.log("FIRE")
+        changeSectionState(event.target.id)
+    }
 
     return (
     
@@ -26,7 +33,7 @@ const Accordion = () => {
                 >
                 <p></p>
                 <p>
-                <Link to="/novedades"> Novedades </Link>
+                <Link to="/novedades" id="novedades" onClick={handleStateChange}> Novedades </Link>
                 </p>
                 <p></p>
         </Panel>
@@ -36,7 +43,7 @@ const Accordion = () => {
                 >
                 <p></p>
                 <p>
-                    <Link to="/nosotros"> Nosotros </Link>
+                    <Link to="/nosotros" id="nosotros" onClick={handleStateChange}> Nosotros </Link>
                 </p>
                 <p></p>
         </Panel>
@@ -46,7 +53,7 @@ const Accordion = () => {
             >
             <p></p>
             <p>
-            <Link to="/fotos"> Fotos </Link>
+            <Link to="/fotos" id="fotos" onClick={handleStateChange} > Fotos </Link>
             </p>
             <p></p>
         </Panel>

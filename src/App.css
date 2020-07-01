@@ -79,6 +79,10 @@
   color: #FFCC00
 }
 
+.selected {
+  color: #FFCC00 !important
+}
+
 #row-of-columns {
   display: flex;
   flex-direction: row;
@@ -407,14 +411,10 @@ align-content: flex-start;
   text-align: center;
   font-family: ClickerScript;
   font-size: 2em;
-  color: white;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
-  
-  
+  color: #261200;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color:  	 	#261200;
 }
-
-
 
 br {
   margin-bottom: 1%;

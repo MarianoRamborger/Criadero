@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css'
 
 // import LeftBody from './Components/LeftBody/Leftbody'
@@ -14,8 +14,6 @@ import NotFound from './Components/LeftBody/NotFound'
 // import Gorriones from './Components/Intro/Intro'
 
 
-
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -27,6 +25,10 @@ import {
 
 
 export const App = () => {
+
+const [sectionState, changeSectionState] = useState("home")
+
+
  
 return (
  
@@ -39,7 +41,7 @@ return (
 
           <Route exact path="/">
               <Title />
-            <Accordion />
+            <Accordion changeSectionState={changeSectionState} />
           </Route>
 
 
@@ -50,7 +52,7 @@ return (
 
           <Route exact path="/novedades">
 
-                <Header/>
+                <Header  sectionState={sectionState} changeSectionState={changeSectionState}/>
 
                 <div id="row-of-columns">
                 <NewsBody />
@@ -59,9 +61,9 @@ return (
                 </div>
           </Route>
 
-          <Route exact path="/fotos">
+          <Route  exact path="/fotos">
 
-              <Header/>
+              <Header sectionState={sectionState} changeSectionState={changeSectionState}/>
 
               <div id="row-of-columns">
               <PicturesBody />
@@ -71,7 +73,7 @@ return (
           </Route>
 
           <Route exact path="/nosotros">
-           <Header/>
+           <Header sectionState={sectionState} changeSectionState={changeSectionState} />
 
               <div id="row-of-columns">
               <NosotrosBody />
@@ -82,7 +84,7 @@ return (
           </Route>
 
           <Route exact path="/contacto">
-           <Header/>
+           <Header sectionState={sectionState} changeSectionState={changeSectionState}/>
 
               <div id="row-of-columns">
               <ContactoBody />

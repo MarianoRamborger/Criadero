@@ -15,6 +15,7 @@ const NewsBody  = () => {
         
         <NewsCard 
             title={"Estrenamos página!"}
+            id={"12"}
             text={"texto de relleno!"}
             image={pic1}
             imageAlt={"Perro celebrando"}
@@ -33,11 +34,11 @@ const NewsBody  = () => {
                     className : "news-card-multi-image contrast"
                  },
                  {
-                    image: multidemo2, alt: "multidemo 2", className: "news-card-multi-image contrast"
+                    image: multidemo2, alt: "multidemo 2", className: "news-card-multi-image contrast",  id:"14"
                  }
                  ,
                  {
-                    image: multidemo3, alt: "multidemo 3", className: "news-card-multi-image contrast"
+                    image: multidemo3, alt: "multidemo 3", className: "news-card-multi-image contrast", id:"15"
                  }
             ]}
     

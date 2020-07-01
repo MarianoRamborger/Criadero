@@ -1,7 +1,10 @@
 import React from 'react'
 import Navbar from './Navbar'
 
-const Header = () => {
+const Header = (props) => {
+    
+    const {sectionState, changeSectionState} = props;
+
 
     return (
         <div className="header-div">
@@ -10,7 +13,7 @@ const Header = () => {
             <div className="title-div">
             <h1>      Criadero "Copos de Nieve"  </h1>   
             </div>
-            <Navbar />
+            <Navbar sectionState={sectionState} changeSectionState={changeSectionState}/>
           
           
         </div>
