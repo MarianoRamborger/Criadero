@@ -178,7 +178,7 @@ export  const CarrouselModal = (props) => {
           
 
 
-          <Swipeable onSwiping={handleSwiping } onSwiped={handleSwiped}  >
+          <Swipeable onSwiping={handleSwiping } onSwiped={handleSwiped} className="swipe"  >
           <img src={Comments[currentPic]} alt="Comentario"  id="swipeable" />
           </Swipeable>
          
