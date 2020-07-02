@@ -490,6 +490,11 @@ align-content: flex-start;
     font-size: 14px;
     margin: 0px;
   }
+  .news-card-multi-image, .fotos-section-pic  {
+    width: 75px;
+    height: 125px;
+    margin-bottom: 5px
+  }
   
 }
 
