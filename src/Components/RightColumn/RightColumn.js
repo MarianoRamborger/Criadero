@@ -7,16 +7,26 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import PhoneInTalkIcon from '@material-ui/icons/PhoneInTalk';
 import MailIcon from '@material-ui/icons/Mail';
 import {isMobile} from "react-device-detect";
+import { CarrouselModal } from '../Modal/CarrouselModal'
 
 const RightColumn = () => {
 
     return ( 
     <div className="right-column">
 
+    <div className="right-column-cap">
+     
+    </div>
+
         <div className="right-column-sticky">
 
         <SpringModal image={Certificado} alt={"Certificado"} className={"cert-pic contrast"} fullScreenClassName={'cert-big'}  />
        
+        <CarrouselModal/>
+
+        <div className="contact-flex-div">
+      <p className="contact-flex"> Facebook </p>
+      </div>
 
     
 
@@ -29,7 +39,9 @@ const RightColumn = () => {
                 </div>
        
 
-        
+        <div className="contact-flex-div">
+        <p className="contact-flex"> Llamanos </p>
+         </div>
 
         {isMobile ?  
                 <div className="phone-div"> 
@@ -48,7 +60,9 @@ const RightColumn = () => {
         }
 
  
-
+        <div className="contact-flex-div">
+      <p className="contact-flex"> Escribinos </p>
+      </div>
 
         {isMobile ? 
                 <div className="email-div"> 
