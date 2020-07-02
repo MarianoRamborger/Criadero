@@ -522,7 +522,7 @@ align-content: flex-start;
   }
 
   #swipeable {
-    width: inherit;
+    width: 80vw;
  
   }
   
