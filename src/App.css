@@ -518,6 +518,10 @@ align-content: flex-start;
     height: 125px;
     margin-bottom: 5px
   }
+
+  #swipeable {
+    width: 400px;
+  }
   
 }
 
