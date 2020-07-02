@@ -498,7 +498,7 @@ align-content: flex-start;
 @media only screen and (max-width: 750px) { 
 
 .carrousel-div {
-  width: 75vw
+  width: 100vw
 }
   
 /* .arrow {
@@ -523,7 +523,7 @@ align-content: flex-start;
 
   #swipeable {
     width: inherit;
-    max-width: inherit;
+ 
   }
   
 }
