@@ -7,6 +7,10 @@ import { useSpring, animated } from 'react-spring/web.cjs'; // web.cjs is requir
 import Comments from './CommentLoader' 
 import { IconButton } from '@material-ui/core';
 import RecordVoiceOverIcon from '@material-ui/icons/RecordVoiceOver';
+import { Swipeable } from 'react-swipeable'
+import {isMobile} from "react-device-detect";
+
+
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -68,20 +72,17 @@ export  const CarrouselModal = (props) => {
   const [currentPic, displayAnotherPic] = useState(0)
 
   const handleCarrousel = (event) => {
+  
 
+    console.log(event)
     if (event.target.id === "fwd"){
     
       if (currentPic < Comments.length - 1) { 
-        console.log(`CurrentPic ${currentPic}`)
-        console.log(`Comments Lenght ${Comments.length}`)
-        console.log("outcome: +1")
-        console.log(Comments)
       displayAnotherPic(currentPic + 1)
+
       }
      else {
-        console.log(`CurrentPic ${currentPic}`)
-        console.log(`Comments Lenght ${Comments.length}`)
-        console.log("outcome: reset")
+    
         displayAnotherPic(0)
       }
     }
@@ -92,8 +93,50 @@ export  const CarrouselModal = (props) => {
       }
       else displayAnotherPic(currentPic - 1)
     }
-  
   }
+
+  
+
+  const handleSwiping = (event) => {
+    let swipeablePic = document.querySelector("#swipeable")
+ 
+   
+    if (event.dir === "Left") {
+      swipeablePic.className = "slide-out-left"
+    }
+    if (event.dir === "Right") {
+      swipeablePic.className = "slide-out-right"
+    }
+  }
+
+  
+
+  const handleSwiped = (event) => {
+    let swipeablePic = document.querySelector("#swipeable")
+    swipeablePic.className = ""
+
+    if (event.dir === "Right") {
+      if (currentPic < Comments.length - 1) { 
+        displayAnotherPic(currentPic + 1)
+        }
+       else {
+          console.log(`CurrentPic ${currentPic}`)
+          console.log(`Comments Lenght ${Comments.length}`)
+          console.log("outcome: reset")
+          displayAnotherPic(0)
+        }
+      }
+
+      else if (event.dir === "Left"){
+        if (currentPic === 0) {
+          (displayAnotherPic(Comments.length - 1))
+        }
+        else displayAnotherPic(currentPic - 1)
+      }
+    
+    }
+
+
 
   return (
     <div className="image-container">
@@ -120,27 +163,33 @@ export  const CarrouselModal = (props) => {
           timeout: 500,
         }}
       >
+
         <Fade in={open}>
           <div className="carrousel-div">
 
-          <IconButton onClick={handleCarrousel} className="arrow-button" >
+
+          {isMobile ? null :   
+            <IconButton onClick={handleCarrousel} className="arrow-button" >
           <p className="arrow backwards" id="prev">  {"<"}  </p>
-          </IconButton>
-
-
-          <img src={Comments[currentPic]} alt="Comentario"/>
+          </IconButton> 
           
-       
-          <IconButton onClick={handleCarrousel} className="arrow-button" >
-          <p className="arrow forward" id="fwd">  {">"}  </p>
-          </IconButton>
+          }
 
-  
+          
 
+
+          <Swipeable onSwiping={handleSwiping } onSwiped={handleSwiped}  >
+          <img src={Comments[currentPic]} alt="Comentario"  id="swipeable" />
+          </Swipeable>
          
+          
+          {isMobile ? null : 
+            <IconButton onClick={handleCarrousel} className="arrow-button" >
+          <p className="arrow forward" id="fwd">  {">"}  </p>
+          </IconButton> }
+       
       
-  
-
+       
 
           </div>
         </Fade>

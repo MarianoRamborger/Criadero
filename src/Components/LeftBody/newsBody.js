@@ -53,7 +53,7 @@ const NewsBody  = () => {
         <NewsCard 
             title={"Estrenamos página!"}
             id={"12"}
-            text={"proximamente"}
+            text={"Proximamente"}
             image={pic1}
             imageAlt={"Perro celebrando"}
             className={"single-news-pic contrast"}

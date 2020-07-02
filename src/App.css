@@ -411,6 +411,16 @@ align-content: flex-start;
   background-color: yellowgreen
 }
 
+.carrousel-div {
+  width: 100%;
+}
+
+.slide-out-right{-webkit-animation:slide-out-right .5s cubic-bezier(.55,.085,.68,.53);animation:slide-out-right .5s cubic-bezier(.55,.085,.68,.53)}
+@-webkit-keyframes slide-out-right{0%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}100%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}}@keyframes slide-out-right{0%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}100%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}}
+
+.slide-out-left{-webkit-animation:slide-out-left .5s cubic-bezier(.55,.085,.68,.53);animation:slide-out-left .5s cubic-bezier(.55,.085,.68,.53)}
+@-webkit-keyframes slide-out-left{0%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}100%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}}@keyframes slide-out-left{0%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}100%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}}
+
 
 @media only screen and (max-width: 1400px) {  
   .email-big {
@@ -481,6 +491,19 @@ align-content: flex-start;
     font-size: 15px;
   }
   
+}
+
+@media only screen and (max-width: 750px) { 
+
+.carrousel-div {
+  width: 75vw
+}
+  
+/* .arrow {
+  font-size: 1em !important;
+
+} */
+
 }
 
 @media only screen and (max-width: 500px) { 
