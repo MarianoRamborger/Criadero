@@ -144,13 +144,12 @@ export  const CarrouselModal = (props) => {
       {/* <img src={props.image} alt={props.alt} className={props.className} onClick={handleOpen}/> */}
       {/* <p onClick={handleOpen}> <StarIcon/><StarIcon/><StarIcon/><StarIcon/><StarHalfIcon/>  </p> */}
 
-      <div className="comments-flex-div">
-      <p className="comments-flex"> Opiniones </p>
-      </div>
 
-      <div className="comments-icon">
+    
       <RecordVoiceOverIcon  onClick={handleOpen} />
-      </div>
+        
+
+     
       <Modal
         aria-labelledby="spring-modal-title"
         aria-describedby="spring-modal-description"

@@ -125,6 +125,9 @@
   margin-top: 8.5%;
   position: sticky;
   top: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
   
 }
 
@@ -295,6 +298,7 @@ align-content: flex-start;
 .fb-icon, .fb-icon:visited, .fb-icon:active {
   text-decoration: none;
   color: yellowgreen;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
 }
 
 .fb-icon svg  {
@@ -305,7 +309,8 @@ align-content: flex-start;
  {
    margin-top: 5%;
   font-size: 3em;
-  color: yellowgreen
+  color: yellowgreen;
+  
 
 }
 
@@ -324,6 +329,7 @@ align-content: flex-start;
   flex-flow: row wrap;
   justify-content: center;
   width: 100%;
+
 
 }
 
@@ -397,18 +403,48 @@ align-content: flex-start;
 }
 
 .comments-flex-div, .contact-flex-div {
-  margin-top: 20px;
+  margin-top: 20px !important;
+
 }
 
-.comments-flex, .contact-flex{
+
+.contact-flex-div {
+  width: 80% !important;
+  border-radius: 8px;
   display: flex;
-  flex-flow: column wrap;
-  font-size: 20px;
-  margin: 0px 5%;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  border: 3px solid yellowgreen;
+
+  
+}
+
+
+
+.contact-flex-title {
+  border-bottom: 2px solid yellowgreen;
+  border-radius: 1px;
+  background-color: yellowgreen;
   color: #6b3d16;
   font-weight: bolder;
-  border: 2px solid yellowgreen;
-  background-color: yellowgreen
+  font-size: 20px;
+  margin: 0px;
+  width: 100%
+}
+
+.contact-flex-icon-row {
+  display: flex;
+  flex-flow: row wrap ; 
+  justify-content: center;
+
+}
+
+.contact-flex-icon-row a {
+  margin: 0px 5px
+}
+.contact-flex-icon-row, .comments-icon{
+  margin: 20px 0px;
 }
 
 .carrousel-div {
@@ -444,6 +480,7 @@ align-content: flex-start;
 
   .fb-icon svg  {
     font-size: 2em;
+  
   }
   
   .news-card-image img { 
@@ -453,6 +490,13 @@ align-content: flex-start;
 
   }
 
+  @media only screen and (max-width: 900px) {
+    .contact-flex-icon-row {
+      flex-flow: column wrap;
+      /* sweet irony top 10 css betrayals */
+    }
+  }
+
   @media only screen and (max-width: 800px) { 
 
     .news-card-multi-image-medium {
@@ -460,6 +504,20 @@ align-content: flex-start;
       height: 160px;
 
     }
+
+    .contact-flex-icon-row, .comments-icon{
+      margin: 10px 0px;
+    }
+
+    .comments-icon svg {
+      font-size: 2.5em;
+    }
+
+    .phone-number svg, .email svg {
+      width: 0.8em;
+    }
+
+   
 
   }
   
@@ -482,6 +540,7 @@ align-content: flex-start;
    
   }}
 
+  
 @media only screen and (max-width: 600px) { 
 
   .news-card-multi-image, .fotos-section-pic  {
@@ -489,7 +548,9 @@ align-content: flex-start;
     height: 150px;
     margin-bottom: 5px
   }
-  .comments-flex, .contact-flex{
+
+  
+  .comments-flex, .contact-flex-title{
     font-size: 15px;
   }
   
@@ -511,7 +572,7 @@ align-content: flex-start;
 @media only screen and (max-width: 500px) { 
 
 
-  .comments-flex, .contact-flex{
+  .comments-flex, .contact-flex-div{
     font-size: 14px;
     margin: 0px;
   }
