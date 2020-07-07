@@ -298,7 +298,7 @@ align-content: flex-start;
 .fb-icon, .fb-icon:visited, .fb-icon:active {
   text-decoration: none;
   color: yellowgreen;
-  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+ 
 }
 
 .fb-icon svg  {
