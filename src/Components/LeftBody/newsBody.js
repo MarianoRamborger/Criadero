@@ -1,7 +1,6 @@
 import React from 'react'
 import NewsCard from '../NewsCard/NewsCard'
 import pic1 from '../../Images/Dogs/news1.jpg'
-import multidemo1 from '../../Images/DemoMultiImagen/multidemo1.jpg'
 import multidemo2 from '../../Images/DemoMultiImagen/multidemo2.jpg'
 import multidemo3 from '../../Images/DemoMultiImagen/multidemo3.jpg'
 
@@ -19,28 +18,28 @@ const NewsBody  = () => {
         <div className="left-column news-column">
         
         <NewsCard 
-            title={"Estamos de nacimiento!"}
+            title={"15/7/2020 -- Estamos de nacimiento!"}
             text={"Recién nacidos!"}
             imageArray = {[
                 {
                     image: n1,
                     alt: "cachorro neonato",
-                    className : "news-card-multi-image-medium contrast",
+                    className : "news-card-multi-image-medium contrast image-normalizer",
                     fullScreenClassName: "full-screen-big"
                 
                  },
                  {
-                    image: n2, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast",  id:"14", fullScreenClassName: "full-screen-big"
+                    image: n2, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast image-normalizer",  id:"14", fullScreenClassName: "full-screen-big"
                  }
                  ,
                  {
-                    image: n3, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast", id:"15", fullScreenClassName: "full-screen-big"
+                    image: n3, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast image-normalizer", id:"15", fullScreenClassName: "full-screen-big"
                  },
                  {
-                    image: n4, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast", id:"16", fullScreenClassName: "full-screen-big"
+                    image: n4, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast image-normalizer", id:"16", fullScreenClassName: "full-screen-big"
                  },
                  {
-                    image: n5, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast", id:"17", fullScreenClassName: "full-screen-big"
+                    image: n5, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast image-normalizer", id:"17", fullScreenClassName: "full-screen-big"
                  }
             ]}
     
@@ -48,7 +47,7 @@ const NewsBody  = () => {
  
 
 
-
+{/* 
 
         <NewsCard 
             title={"Estrenamos página!"}
@@ -59,23 +58,23 @@ const NewsBody  = () => {
             className={"single-news-pic contrast"}
 
             
-        />
+        /> */}
  
         <NewsCard 
-            title={"Muchas imagenes en una sola noticia!"}
-            text={"Es posible! clickealas para agrandarlas!"}
+            title={"15/7/2020 - Estrenamos pagina."}
+            text={"Y lo celebramos con vos!"}
             imageArray = {[
                 {
-                    image: multidemo1,
+                    image: pic1,
                     alt: "multidemo 1",
-                    className : "news-card-multi-image contrast"
+                    className : "news-card-multi-image contrast image-normalizer"
                  },
                  {
-                    image: multidemo2, alt: "multidemo 2", className: "news-card-multi-image contrast",  id:"14"
+                    image: multidemo2, alt: "multidemo 2", className: "news-card-multi-image contrast image-normalizer",  id:"14"
                  }
                  ,
                  {
-                    image: multidemo3, alt: "multidemo 3", className: "news-card-multi-image contrast", id:"15"
+                    image: multidemo3, alt: "multidemo 3", className: "news-card-multi-image contrast image-normalizer", id:"15"
                  }
             ]}
     

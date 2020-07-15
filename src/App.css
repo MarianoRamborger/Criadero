@@ -204,11 +204,17 @@
 }
 
 
+
 .news-card-text {
   font-size: 20px;
   margin-bottom: 30px
 }
 
+.news-card-title, .news-card-text {
+  font-family: Timeless; 
+
+  
+}
 
 
 .news-card-multi-image {
@@ -451,7 +457,42 @@ align-content: flex-start;
   width: 100%;
 }
 
+.load-more-button {
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 20px
+}
 
+.load-more-button button {
+  font-size: 2em;
+  padding: 8px;
+  background-color: #99CD32;
+  border: 2px solid #7AAC16;
+  border-radius: 15px;
+
+}
+
+.full-screen-control {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.fotos-section-pic {
+  filter: sepia(1);
+}
+.fotos-section-pic:hover {
+  filter: none;
+}
+
+.load-more-button button:hover {-webkit-animation:pop-up .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both }
+.load-more-button button:active {-webkit-animation:pressed .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-inset-center .4s cubic-bezier(.25,.46,.45,.94) both}
+
+@-webkit-keyframes pressed{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}@keyframes shadow-drop-2-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}
+
+@-webkit-keyframes shadow-inset-center{0%{-webkit-box-shadow:inset 0 0 0 0 transparent;box-shadow:inset 0 0 0 0 transparent}100%{-webkit-box-shadow:inset 0 0 14px 0 rgba(0,0,0,.5);box-shadow:inset 0 0 14px 0 rgba(0,0,0,.5)}}@keyframes shadow-inset-center{0%{-webkit-box-shadow:inset 0 0 0 0 transparent;box-shadow:inset 0 0 0 0 transparent}100%{-webkit-box-shadow:inset 0 0 14px 0 rgba(0,0,0,.5);box-shadow:inset 0 0 14px 0 rgba(0,0,0,.5)}}
 
 .slide-out-right{-webkit-animation:slide-out-right .5s cubic-bezier(.55,.085,.68,.53);animation:slide-out-right .5s cubic-bezier(.55,.085,.68,.53)}
 @-webkit-keyframes slide-out-right{0%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}100%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}}@keyframes slide-out-right{0%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}100%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}}
@@ -550,6 +591,12 @@ align-content: flex-start;
   }
 
   
+  .image-normalizer {
+
+    width:  100px !important;
+    height: 100px !important;
+  } 
+
   .comments-flex, .contact-flex-title{
     font-size: 15px;
   }
@@ -562,10 +609,7 @@ align-content: flex-start;
   width: 80vw
 }
   
-/* .arrow {
-  font-size: 1em !important;
 
-} */
 
 }
 
@@ -586,7 +630,9 @@ align-content: flex-start;
     width: 100%;
  
   }
-  
+
+
+
 }
 
 
@@ -605,6 +651,12 @@ align-content: flex-start;
 @font-face {
   font-family: ClickerScript;
   src: local(Pacifico-Regular), url('./fonts/ClickerScript-Regular.ttf')
+
+}
+
+@font-face {
+  font-family: Timeless;
+  src: local(Pacifico-Regular), url('./fonts/Timeless.ttf')
 
 }
 
@@ -669,3 +721,10 @@ br {
   color: white
 }
 
+.image-normalizer {
+    float: left;
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
+    /* Arregla el problemilla de como fittear cartas de distintos sizes a la misma card */ 
+}

@@ -65,7 +65,8 @@ export  const SpringModal = (props) => {
   return (
     <div className="image-container">
   
-      <img src={props.image} alt={props.alt} className={props.className} onClick={handleOpen}/>
+   
+      <img src={props.image} alt={props.alt} className={`${props.className} square-image`} onClick={handleOpen}/>
       
 
       <Modal

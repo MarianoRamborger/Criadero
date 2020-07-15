@@ -98,6 +98,7 @@ export  const CarrouselModal = (props) => {
   
 
   const handleSwiping = (event) => {
+    //Shoots *when swiping, controls the swiping animation.
     let swipeablePic = document.querySelector("#swipeable")
  
    
@@ -112,6 +113,7 @@ export  const CarrouselModal = (props) => {
   
 
   const handleSwiped = (event) => {
+    // Shoots after swiping, controls the picture change.
     let swipeablePic = document.querySelector("#swipeable")
     swipeablePic.className = ""
 
@@ -120,9 +122,9 @@ export  const CarrouselModal = (props) => {
         displayAnotherPic(currentPic + 1)
         }
        else {
-          console.log(`CurrentPic ${currentPic}`)
-          console.log(`Comments Lenght ${Comments.length}`)
-          console.log("outcome: reset")
+          // console.log(`CurrentPic ${currentPic}`)
+          // console.log(`Comments Lenght ${Comments.length}`)
+          // console.log("outcome: reset")
           displayAnotherPic(0)
         }
       }
@@ -133,7 +135,6 @@ export  const CarrouselModal = (props) => {
         }
         else displayAnotherPic(currentPic - 1)
       }
-    
     }
 
 
@@ -143,9 +144,7 @@ export  const CarrouselModal = (props) => {
   
       {/* <img src={props.image} alt={props.alt} className={props.className} onClick={handleOpen}/> */}
       {/* <p onClick={handleOpen}> <StarIcon/><StarIcon/><StarIcon/><StarIcon/><StarHalfIcon/>  </p> */}
-
-
-    
+  
       <RecordVoiceOverIcon  onClick={handleOpen} />
         
 
@@ -177,7 +176,7 @@ export  const CarrouselModal = (props) => {
           
 
 
-          <Swipeable onSwiping={handleSwiping } onSwiped={handleSwiped} className="swipe"  >
+          <Swipeable onSwiping={handleSwiping} onSwiped={handleSwiped} className="swipe"  >
           <img src={Comments[currentPic]} alt="Comentario"  id="swipeable" />
           </Swipeable>
          
