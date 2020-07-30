@@ -37,16 +37,20 @@ const Accordion = (props) => {
                 </p>
                 <p></p>
         </Panel>
+
+      
+
         <Panel
                 itemId="1"
                 background={Nosotros}
                 >
                 <p></p>
                 <p>
-                    <Link to="/nosotros" id="nosotros" onClick={handleStateChange}> Nosotros </Link>
+                    <Link to="/nosotros" id="nosotros"   onClick={handleStateChange}> Nosotros </Link>
                 </p>
                 <p></p>
         </Panel>
+        
         <Panel
             itemId="2"
             background={Fotos}

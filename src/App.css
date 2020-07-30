@@ -258,7 +258,7 @@ position: fixed;
 width: 100%;
 justify-content: center;
 background-color: rgba(177, 126, 81, 0.4);
-
+z-index: 2;
 }
 
 
@@ -481,10 +481,10 @@ align-content: flex-start;
 }
 
 .fotos-section-pic {
-  filter: sepia(1);
+  filter: brightness(0.9);
 }
 .fotos-section-pic:hover {
-  filter: none;
+  filter: brightness(1);
 }
 
 .load-more-button button:hover {-webkit-animation:pop-up .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both }
