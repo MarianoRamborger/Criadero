@@ -24,22 +24,22 @@ const NewsBody  = () => {
                 {
                     image: n1,
                     alt: "cachorro neonato",
-                    className : "news-card-multi-image-medium contrast image-normalizer",
+                    className : "news-card-multi-image-medium hoverEffect image-normalizer",
                     fullScreenClassName: "full-screen-big"
                 
                  },
                  {
-                    image: n2, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast image-normalizer",  id:"14", fullScreenClassName: "full-screen-big"
+                    image: n2, alt: "cachorro neonato", className: "news-card-multi-image-medium hoverEffect image-normalizer",  id:"14", fullScreenClassName: "full-screen-big"
                  }
                  ,
                  {
-                    image: n3, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast image-normalizer", id:"15", fullScreenClassName: "full-screen-big"
+                    image: n3, alt: "cachorro neonato", className: "news-card-multi-image-medium hoverEffect image-normalizer", id:"15", fullScreenClassName: "full-screen-big"
                  },
                  {
-                    image: n4, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast image-normalizer", id:"16", fullScreenClassName: "full-screen-big"
+                    image: n4, alt: "cachorro neonato", className: "news-card-multi-image-medium hoverEffect image-normalizer", id:"16", fullScreenClassName: "full-screen-big"
                  },
                  {
-                    image: n5, alt: "cachorro neonato", className: "news-card-multi-image-medium contrast image-normalizer", id:"17", fullScreenClassName: "full-screen-big"
+                    image: n5, alt: "cachorro neonato", className: "news-card-multi-image-medium hoverEffect image-normalizer", id:"17", fullScreenClassName: "full-screen-big"
                  }
             ]}
     
@@ -67,14 +67,14 @@ const NewsBody  = () => {
                 {
                     image: pic1,
                     alt: "multidemo 1",
-                    className : "news-card-multi-image contrast image-normalizer"
+                    className : "news-card-multi-image hoverEffect  image-normalizer"
                  },
                  {
-                    image: multidemo2, alt: "multidemo 2", className: "news-card-multi-image contrast image-normalizer",  id:"14"
+                    image: multidemo2, alt: "multidemo 2", className: "news-card-multi-image  hoverEffect image-normalizer",  id:"14"
                  }
                  ,
                  {
-                    image: multidemo3, alt: "multidemo 3", className: "news-card-multi-image contrast image-normalizer", id:"15"
+                    image: multidemo3, alt: "multidemo 3", className: "news-card-multi-image hoverEffect image-normalizer", id:"15"
                  }
             ]}
     

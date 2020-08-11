@@ -34,6 +34,8 @@
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
+  font-family: Snow ;
+  font-size: 1.3em;
 
 
   
@@ -177,6 +179,7 @@
 .news-card-text-div, .news-card-image {
   display: flex;
   flex-direction: column;
+  
 }
 
 
@@ -200,21 +203,19 @@
 }
 
 .news-card-title {
-  font-size: 30px
+  font-size: 30px;
+  font-family: Coolvetica !important;
 }
 
 
 
 .news-card-text {
   font-size: 20px;
-  margin-bottom: 30px
+  margin-bottom: 30px;
+  font-family: Coolvetica !important
 }
 
-.news-card-title, .news-card-text {
-  font-family: Timeless; 
 
-  
-}
 
 
 .news-card-multi-image {
@@ -315,14 +316,17 @@ align-content: flex-start;
  {
    margin-top: 5%;
   font-size: 3em;
-  color: yellowgreen;
-  
+  color: yellowgreen; 
+}
 
+.phone-number p {
+  font-family: Verdana;
 }
 
 
 .phone-number svg:hover, .email svg:hover, .comments-icon svg:hover {
-  color: greenyellow
+  color: greenyellow;
+  cursor: pointer;
 }
 
 .phone-number a, .phone-number a:visited, .phone-number:active {
@@ -375,7 +379,8 @@ align-content: flex-start;
 }
 
 .email-big {
-  font-size: 14px
+  font-size: 14px;
+  font-family: Verdana !important
 }
 
 .full-screen-big {
@@ -480,11 +485,13 @@ align-content: flex-start;
   max-height: 90vh;
 }
 
-.fotos-section-pic {
-  filter: brightness(0.9);
+.fotos-section-pic, .hoverEffect {
+  filter: brightness(0.9) !important;
+  
 }
-.fotos-section-pic:hover {
-  filter: brightness(1);
+.fotos-section-pic:hover, .hoverEffect:hover{
+  cursor: pointer;
+  filter: brightness(1) !important;
 }
 
 .load-more-button button:hover {-webkit-animation:pop-up .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both }
@@ -660,6 +667,16 @@ align-content: flex-start;
 
 }
 
+@font-face {
+  font-family: Snow;
+  src: local(Pacifico-Regular), url('./fonts/Snow\ Fairy.otf')
+}
+@font-face {
+  font-family: Coolvetica;
+  src: local(Pacifico-Regular), url('./fonts/coolvetica\ rg.ttf')
+}
+
+
 .nosotros-section-p {
   padding: 0 10%;
   text-align: center;
@@ -678,12 +695,8 @@ br {
 
 .left-column-container {
   width: 80%;
-  /* min-width: 80%;
-  max-width: 80%; */
-  background-image: url("./Components/Intro/gorriones.jpg");
-  background-attachment: local;
-  background-size: cover;
 
+  
 }
 
 .not-found {
