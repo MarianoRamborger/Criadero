@@ -23,12 +23,12 @@ return (
     <nav className="nav-bar">
         <ul className="nav-list">
 
-        {
+        {/* {
             sectionState === "home" ?
             <li> <Link to="/home"  className="selected" id="home"  onClick={handleStateChange} > Home </Link>  </li>
             : 
             <li> <Link to="/home"  id="home"  onClick={handleStateChange} > Home </Link>  </li>
-        }
+        } */}
 
         {
             sectionState === "novedades" ?  

@@ -3,8 +3,8 @@ import './App.css'
 
 // import LeftBody from './Components/LeftBody/Leftbody'
 import Header from './Components/Header/Header'
-import Title from './Components/Accordion/Title'
-import Accordion from './Components/Accordion/Accordion'
+// import Title from './Components/Accordion/Title'
+// import Accordion from './Components/Accordion/Accordion'
 import PicturesBody from './Components/LeftBody/PicturesBody'
 import NewsBody from './Components/LeftBody/newsBody'
 import NosotrosBody from './Components/LeftBody/NosotrosBody'
@@ -26,7 +26,7 @@ import {
 
 export const App = () => {
 
-const [sectionState, changeSectionState] = useState("home")
+const [sectionState, changeSectionState] = useState("novedades")
 
 
  
@@ -39,7 +39,7 @@ return (
 
 
 
-          <Route exact path="/">
+          {/* <Route exact path="/">
               <Title />
             <Accordion changeSectionState={changeSectionState} />
           </Route>
@@ -47,10 +47,10 @@ return (
 
           <Route exact path="/home">
           <Redirect to='/' />
-          </Route>
+          </Route> */}
 
 
-          <Route exact path="/novedades">
+          <Route exact path="/">
 
                 <Header  sectionState={sectionState} changeSectionState={changeSectionState}/>
 
@@ -60,6 +60,11 @@ return (
                 <RightColumn />
                 </div>
           </Route>
+
+          <Route exact path="/novedades">
+          <Redirect to='/' />
+          </Route> 
+
 
           <Route  exact path="/fotos">
 
